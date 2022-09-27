@@ -9436,6 +9436,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 `)
         }
     }
+    for (let index = 0; index < 1; index++) {
+        scene.cameraShake(0, 100)
+    }
     mySprite2.setVelocity(0, 0)
     scene.setBackgroundImage(img`
         ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -22455,7 +22458,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
         8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
         `)
-    mySprite.setImage(img`
+    mySprite2.setImage(img`
         ............................................................
         ............................................................
         ............................................................
@@ -22477,10 +22480,16 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         ............................................................
         ............................................................
         `)
-    mySprite.setPosition(38, -3)
-    mySprite.setVelocity(0, 22)
+    mySprite2.setPosition(73, -3)
+    mySprite2.setVelocity(0, 22)
     mySprite3.setPosition(1000, 1000)
     mySprite5.setPosition(1000, 1000)
+    mySprite.setPosition(1000, 1000)
+    mySprite2.startEffect(effects.fire, 5000)
+    mySprite2.startEffect(effects.fire, 5000)
+    mySprite2.startEffect(effects.fire, 5000)
+    mySprite2.startEffect(effects.fire, 5000)
+    mySprite2.startEffect(effects.fire, 5000)
 })
 let mySprite3: Sprite = null
 let mySprite5: Sprite = null
